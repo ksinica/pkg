@@ -6,7 +6,7 @@ package rollbar
 import (
 	"os"
 
-	"github.com/packethost/pkg/env"
+	"github.com/ksinica/pkg/env"
 	rollbar "github.com/rollbar/rollbar-go"
 	rollbarerrors "github.com/rollbar/rollbar-go/errors"
 	"go.uber.org/zap"

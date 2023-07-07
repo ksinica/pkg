@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/packethost/pkg/log"
+	"github.com/ksinica/pkg/log"
 	"github.com/pkg/errors"
 )
 
@@ -15,7 +15,7 @@ func helpfulWrapper(l log.Logger, message string) {
 }
 
 func main() {
-	l, err := log.Init("github.com/packethost/pkg")
+	l, err := log.Init("github.com/ksinica/pkg")
 	if err != nil {
 		panic(err)
 	}

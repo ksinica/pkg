@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/packethost/pkg/internal/testenv"
+	"github.com/ksinica/pkg/internal/testenv"
 	assert "github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

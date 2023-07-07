@@ -1,4 +1,4 @@
-module github.com/packethost/pkg/log/logr
+module github.com/ksinica/pkg/log/logr
 
 go 1.15
 

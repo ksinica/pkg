@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/packethost/pkg/internal/testenv"
+	"github.com/ksinica/pkg/internal/testenv"
 )
 
 func ExampleBool() {

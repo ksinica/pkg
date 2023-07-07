@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/packethost/pkg/internal/testenv"
-	"github.com/packethost/pkg/log"
+	"github.com/ksinica/pkg/internal/testenv"
+	"github.com/ksinica/pkg/log"
 	"github.com/stretchr/testify/require"
 	assert "github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
@@ -29,7 +29,7 @@ import (
 	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
-const svc = "github.com/packethost/pkg/grpc"
+const svc = "github.com/ksinica/pkg/grpc"
 
 func TestDefaultsAndOrdering(t *testing.T) {
 	l := log.Test(t, svc)

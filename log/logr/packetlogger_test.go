@@ -32,7 +32,7 @@ func TestPacketLogrRollbarEnabled(t *testing.T) {
 		l, _, err := NewPacketLogr(
 			WithLogLevel("debug"),
 			WithEnableRollbar(true),
-			WithServiceName("github.com/packethost/pkg"),
+			WithServiceName("github.com/ksinica/pkg"),
 			WithRollbarConfig(rollbarConfig{
 				token:   "badtoken",
 				env:     "production",

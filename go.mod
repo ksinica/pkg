@@ -1,4 +1,4 @@
-module github.com/packethost/pkg
+module github.com/ksinica/pkg
 
 go 1.12
 

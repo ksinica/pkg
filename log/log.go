@@ -7,7 +7,7 @@ import (
 	"os"
 
 	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
-	"github.com/packethost/pkg/log/internal/rollbar"
+	"github.com/ksinica/pkg/log/internal/rollbar"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"

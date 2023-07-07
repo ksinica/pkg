@@ -10,7 +10,7 @@ import (
 )
 
 func setupForExamples(example string) Logger {
-	service := "github.com/packethost/pkg"
+	service := "github.com/ksinica/pkg"
 	c := setupConfig(service)
 	c.Level = zap.NewAtomicLevelAt(zap.DebugLevel)
 	c.OutputPaths = []string{"stdout"}
@@ -35,7 +35,7 @@ func ExampleLogger_Debug() {
 
 	l.Debug("debug message")
 	//Output:
-	//{"level":"debug","caller":"log/log_examples_test.go:36","msg":"debug message","service":"github.com/packethost/pkg","pkg":"debug"}
+	//{"level":"debug","caller":"log/log_examples_test.go:36","msg":"debug message","service":"github.com/ksinica/pkg","pkg":"debug"}
 
 }
 
@@ -48,7 +48,7 @@ func ExampleLogger_Info() {
 	}()
 	l.Info("info message")
 	//Output:
-	//{"level":"info","caller":"log/log_examples_test.go:49","msg":"info message","service":"github.com/packethost/pkg","pkg":"info"}
+	//{"level":"info","caller":"log/log_examples_test.go:49","msg":"info message","service":"github.com/ksinica/pkg","pkg":"info"}
 
 }
 
@@ -58,7 +58,7 @@ func ExampleLogger_Error() {
 
 	l.Error(fmt.Errorf("oh no an error"))
 	//Output:
-	//{"level":"error","caller":"log/log_examples_test.go:59","msg":"oh no an error","service":"github.com/packethost/pkg","pkg":"error","error":"oh no an error"}
+	//{"level":"error","caller":"log/log_examples_test.go:59","msg":"oh no an error","service":"github.com/ksinica/pkg","pkg":"error","error":"oh no an error"}
 
 }
 
@@ -71,7 +71,7 @@ func ExampleLogger_Fatal() {
 	}()
 	l.Fatal(fmt.Errorf("oh no an error"))
 	//Output:
-	//{"level":"error","caller":"log/log_examples_test.go:72","msg":"oh no an error","service":"github.com/packethost/pkg","pkg":"fatal","error":"oh no an error"}
+	//{"level":"error","caller":"log/log_examples_test.go:72","msg":"oh no an error","service":"github.com/ksinica/pkg","pkg":"fatal","error":"oh no an error"}
 
 }
 
@@ -81,7 +81,7 @@ func ExampleLogger_With() {
 
 	l.With("true", true).Info("info message")
 	//Output:
-	//{"level":"info","caller":"log/log_examples_test.go:82","msg":"info message","service":"github.com/packethost/pkg","pkg":"with","true":true}
+	//{"level":"info","caller":"log/log_examples_test.go:82","msg":"info message","service":"github.com/ksinica/pkg","pkg":"with","true":true}
 
 }
 
@@ -93,6 +93,6 @@ func ExampleLogger_Package() {
 	l = l.Package("package")
 	l.Info("info message")
 	//Output:
-	//{"level":"info","caller":"log/log_examples_test.go:92","msg":"info message","service":"github.com/packethost/pkg","pkg":"info"}
-	//{"level":"info","caller":"log/log_examples_test.go:94","msg":"info message","service":"github.com/packethost/pkg","pkg":"info","pkg":"package"}
+	//{"level":"info","caller":"log/log_examples_test.go:92","msg":"info message","service":"github.com/ksinica/pkg","pkg":"info"}
+	//{"level":"info","caller":"log/log_examples_test.go:94","msg":"info message","service":"github.com/ksinica/pkg","pkg":"info","pkg":"package"}
 }

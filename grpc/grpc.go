@@ -12,8 +12,8 @@ import (
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
-	"github.com/packethost/pkg/env"
-	"github.com/packethost/pkg/log"
+	"github.com/ksinica/pkg/env"
+	"github.com/ksinica/pkg/log"
 	"github.com/pkg/errors"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 	"google.golang.org/grpc"

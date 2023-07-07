@@ -1,4 +1,4 @@
-module github.com/packethost/pkg/grpc/authz
+module github.com/ksinica/pkg/grpc/authz
 
 go 1.15
 

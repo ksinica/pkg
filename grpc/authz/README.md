@@ -25,7 +25,7 @@ import (
     jwt "github.com/cristalhq/jwt/v3"
     grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
     grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
-    "github.com/packethost/pkg/grpc/authz"
+    "github.com/ksinica/pkg/grpc/authz"
     "google.golang.org/grpc"
 )
 
@@ -76,7 +76,7 @@ import (
     jwt "github.com/cristalhq/jwt/v3"
     grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
     grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
-    "github.com/packethost/pkg/grpc/authz"
+    "github.com/ksinica/pkg/grpc/authz"
     "google.golang.org/grpc"
     "google.golang.org/grpc/codes"
     "google.golang.org/grpc/status"
